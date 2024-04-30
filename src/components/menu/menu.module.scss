@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .btn{
+        button{
+            color: rgb(84, 84, 252);
+            font-size: 22px;
+            border: 0;
+            border-radius: 5px;
+            outline: 1px solid rgb(84, 84, 252);
+            margin: 4px;
+            padding: 3px 8px;
+            cursor: pointer;
+            background: white;
+            opacity: 0.8;
+            transition: .5s;
+            &:hover{
+                opacity: 1
+            }
+        }
+    }
+}

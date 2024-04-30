@@ -1,0 +1,33 @@
+.sidebar{
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    background: rgb(243, 243, 243);
+    top: 0;
+    left: -230px;
+    padding: 5px 10px;
+    transition: 1s ease-in-out;
+    z-index: 997;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .list {
+        
+    }
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        h2{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        span{
+            cursor: pointer;
+        }
+    }
+}

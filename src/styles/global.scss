@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.opened{
+    left: 0px;
+}
+
+.chat{
+    margin-top: 60px;
+    padding-left: 40px;
+    height: calc(100vh - 60px);
+    .main{
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding-top: 5px;
+        position: relative;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+          
+        &::-webkit-scrollbar-track {
+            background: rgb(238, 238, 238);
+        }
+          
+        &::-webkit-scrollbar-thumb {
+            background:gray;
+        }
+
+        .message{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            margin: 5px;
+            
+            &.received {
+                flex-direction: row-reverse;
+
+                .message-main{
+                    flex-direction: row-reverse;
+                }
+                .message-inner{
+                    border-radius: 0 10px 10px 10px;
+                }
+            }
+
+            img {
+                border-radius: 50%;
+                margin-top: 5px;
+            }
+            &-main{
+                display: flex;
+
+                .message-inner{
+                    background:rgb(84, 84, 252);
+                    color: white;
+                    width: fit-content;
+                    max-width: 400px;
+                    word-wrap: break-word;
+                    padding: 5px 10px;
+                    border-radius: 10px 0 10px 10px;
+                    margin: 5px;
+
+                    @media(max-width: 900px){
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+        .message:nth-child(1){
+            margin-top: auto !important;
+        }
+    }
+    .sender{
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 40px);
+        padding: 5px 10px;
+        background: white;
+
+        input{
+            font-size: 16px;
+            width: 100%;
+            height: 28px;
+            border-radius: 2px;
+            border: 0;
+            padding-inline: 10px;
+            outline: 1px solid gray;
+        }
+        button{
+            width: auto;
+            color: rgb(84, 84, 252);
+            font-size: 18px;
+            border: 0;
+            border-radius: 5px;
+            outline: 1px solid rgb(84, 84, 252);
+            padding: 3px 5px;
+            cursor: pointer;
+            background: white;
+            opacity: 0.8;
+            align-self: flex-start;
+            transition: .5s;
+            &:hover{
+                opacity: 1
+            }
+        }
+    }
+}

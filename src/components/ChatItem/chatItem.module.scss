@@ -1,0 +1,22 @@
+.item{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 2px;
+
+    a{
+        color: black;
+        display: block;
+        font-size: 20px;
+        width: inherit;
+        height: inherit;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        &:hover{
+            background: rgb(216, 216, 216)
+        }
+    }
+}

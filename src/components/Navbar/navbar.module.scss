@@ -1,0 +1,47 @@
+.nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: white;
+    // gap: 3vw;
+    padding-left: 40px;
+
+    a{
+        color: #2b2b2b;
+        font-size: 1em;
+        text-decoration: none;
+    }
+    .inner{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        h3{
+            font-size: 1em;
+        }
+
+        button{
+            color: rgb(84, 84, 252);
+            font-size: 15px;
+            border: 0;
+            border-radius: 5px;
+            outline: 1px solid rgb(84, 84, 252);
+            margin: 4px;
+            padding: 2px 6px;
+            cursor: pointer;
+            background: white;
+            opacity: 0.8;
+            transition: .5s;
+            height: fit-content;
+            &:hover{
+                opacity: 1
+            }
+        }
+    }
+}
